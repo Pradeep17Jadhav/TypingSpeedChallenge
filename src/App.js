@@ -3,8 +3,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 
 function App() {
-	// const [chars, setChars] = useState("abcdefghijklmnopqrstuvwxyz");
-	const [chars, setChars] = useState("abcde");
+	const [chars, setChars] = useState("abcdefghijklmnopqrstuvwxyz");
 	const [currChar, setCurrChar] = useState("");
 	const [inputValue, setInputValue] = useState("");
 	const [startTime, setStartTime] = useState(0);
