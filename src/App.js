@@ -32,7 +32,7 @@ function App() {
 	}, [endTime]);
 
 	const CheckInput = (evt) => {
-		if(evt.nativeEvent.data == currChar) {
+		if(evt.nativeEvent.data == currChar || evt.nativeEvent.data == inputValue + currChar) {
 			if(startTime == 0) {
 				setStartTime(new Date().getTime());
 			}
@@ -42,7 +42,6 @@ function App() {
 			if(newCurrChar == "") {
 				setEndTime(new Date().getTime());
 			}
-
 			setInputValue(inputValue + char);
 		}
 	}
