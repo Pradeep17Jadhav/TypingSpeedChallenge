@@ -47,13 +47,18 @@ function App() {
 		}
 	}
 
+	const onTextCopyPaste = (evt) => {
+		evt.preventDefault();
+		return false;
+    };
+
 	return (
 		<div className="App">
 			<h1>Typing Speed Challenge</h1>
 			<div id="board">
 				{currChar}
 			</div>
-			<input type="text" id="inputbox" value={inputValue} onChange={evt => CheckInput(evt)}></input>
+			<input type="text" id="inputbox" value={inputValue} onInput={evt => CheckInput(evt)} onPaste={evt => onTextCopyPaste(evt)} onCopy={evt => onTextCopyPaste(evt)}></input>
 			<button id="reset">Reset</button>
 			{endTime != 0 ? <div>You took {endTime - startTime} milliseconds to complete.</div> : null}
 		</div>
