@@ -2,6 +2,9 @@
 	--background: #1f1b24;
 	--primary: #ffe4c4;
 }
+html {
+	height: 95%;
+}
 
 body {
 	background-color: var(--background);
@@ -9,6 +12,7 @@ body {
 	user-select: none;
 	font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	width: 100%;
+	height: 100%;
 }
 
 .App {
@@ -31,7 +35,7 @@ body {
 	justify-content: center;
 	height: 160px;
 	width: 80%;
-	margin: 48px auto;
+	margin: 24px auto;
 	line-height: 108px;
 	font-size: 80px;
 	background-color: var(--primary);
@@ -78,13 +82,34 @@ body {
 
 #credit {
 	font-size: 12px;
-	margin-top: 48px;
+	margin-top: 32px;
 	text-align: center;
 }
 
 #credit a {
 	color: var(--primary);
 	text-decoration: none;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	#title {
+		font-size: 24px;
+	}
+
+	#tagline {
+		font-size: 18px;
+	}
+
+	#board {
+		height: 96px;
+		font-size: 64px;
+	}
+
+	#timer {
+		margin: 16px;
+		font-size: 24px;
+	}
 }
 
 /** Code to remove uppercase property from inputbox placeholder */
