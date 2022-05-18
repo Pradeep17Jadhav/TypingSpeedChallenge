@@ -77,11 +77,8 @@ body {
 
 
 #credit {
+	margin-top: 102px;
 	text-align: center;
-	display: block;
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
 }
 
 #credit a {

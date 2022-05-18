@@ -65,8 +65,8 @@ function App() {
 		setIntervalId(0);
 	}
 
-	const checkInput = (evt) => {
-		if(startTime != 0 && evt.nativeEvent.data == currChar || evt.nativeEvent.data == inputValue + currChar) {
+	const onInput = (evt) => {
+		if(evt.target.value[evt.target.value.length - 1] == currChar) {
 			if(!running)
 				startGame();
 
@@ -110,7 +110,7 @@ function App() {
 				id="inputbox" 
 				value={inputValue} 
 				placeholder="Type here to start..."
-				onInput={evt => checkInput(evt)} 
+				onInput={evt => onInput(evt)} 
 				onPaste={evt => onTextCopyPaste(evt)} 
 				onCopy={evt => onTextCopyPaste(evt)}>
 			</input>
