@@ -1,3 +1,16 @@
+:root {
+	--background: #1f1b24;
+	--primary: #ffe4c4;
+}
+
+body {
+	background-color: var(--background);
+	color: aliceblue;
+	user-select: none;
+	font-family: Roboto, Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 100%;
+}
+
 .App {
   text-align: center;
 }
