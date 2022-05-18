@@ -77,12 +77,14 @@ body {
 
 
 #credit {
-	margin-top: 102px;
+	font-size: 12px;
+	margin-top: 48px;
 	text-align: center;
 }
 
 #credit a {
 	color: var(--primary);
+	text-decoration: none;
 }
 
 /** Code to remove uppercase property from inputbox placeholder */

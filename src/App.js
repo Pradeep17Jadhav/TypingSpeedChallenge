@@ -123,7 +123,7 @@ function App() {
 			</button>
 
 			<p id="timer">Time: {(timeTaken / 1000).toFixed(3)} s</p>
-			<p id="credit">Created by <a href="https://www.linkedin.com/in/pradeep-jadhav/" target="_blank"><b>Pradeep Jadhav</b></a></p>
+			<p id="credit">Created by <a href="https://www.linkedin.com/in/pradeep-jadhav/" target="_blank">Pradeep Jadhav</a></p>
 		</div>
 	);
 }
