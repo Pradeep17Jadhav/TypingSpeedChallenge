@@ -7,45 +7,100 @@ body {
 	background-color: var(--background);
 	color: aliceblue;
 	user-select: none;
-	font-family: Roboto, Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	width: 100%;
 }
 
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#title {
+	font-size: 32px;
+	margin: 8px 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#tagline {
+	font-size: 24px;
+	margin: 8px 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#board {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 160px;
+	width: 80%;
+	margin: 48px auto;
+	line-height: 108px;
+	font-size: 80px;
+	background-color: var(--primary);
+	border-radius: 8px;
+	text-transform: uppercase;
+	color: #1f1b24;
+	font-weight: 900;
 }
 
-.App-link {
-  color: #61dafb;
+#inputbox {
+	font-size: 20px;
+	margin: 0 10px;
+	padding: 0;
+	height: 48px;
+	width: 70%;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	padding: 8px 16px;
+	border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btnreset {
+	background-color: var(--primary);
+	height: 48px;
+	width: 72px;
+    font-weight: 400;
+	font-size: 20px;
+	padding: 0px !important;
+	margin: 0px;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#timer {
+	font-family: Roboto, Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 24px;
+	font-size: 32px;
+}
+
+
+#credit {
+	text-align: center;
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+#credit a {
+	color: var(--primary);
+}
+
+/** Code to remove uppercase property from inputbox placeholder */
+::-webkit-input-placeholder { /* WebKit browsers */
+    text-transform: none;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-transform: none;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-transform: none;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    text-transform: none;
+}
+::placeholder { /* Recent browsers */
+    text-transform: none;
 }
