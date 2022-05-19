@@ -66,7 +66,7 @@ function App() {
 	}
 
 	const onInput = (evt) => {
-		if(evt.target.value[evt.target.value.length - 1] == currChar) {
+		if(evt.target.value[evt.target.value.length - 1].toLowerCase() == currChar.toLowerCase()) {
 			if(!running)
 				startGame();
 
